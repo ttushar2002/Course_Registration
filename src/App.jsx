@@ -13,11 +13,11 @@ const App = () => {
         <Route path="/Slogin" element={<Slogin />} />
 
         {/* Faculty */}
-        <Route path="/Slogin" element={<Flogin />} />
+        <Route path="/Flogin" element={<Flogin />} />
 
         {/* Admin */}
-        <Route path="/Slogin" element={<Alogin />} />
-        
+        <Route path="/Alogin" element={<Alogin />} />
+
       </Routes>
     </>
   );
