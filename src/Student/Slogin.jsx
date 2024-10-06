@@ -38,19 +38,6 @@ const Slogin = () => {
             </button>
           </form>
 
-          <div className="separator">
-            <span>or</span>
-          </div>
-
-          <button className="google-btn">
-            <img
-              src="https://www.svgrepo.com/show/355037/google.svg"
-              alt="Google"
-              className="google-icon"
-            />
-            Sign in with Google
-          </button>
-
           <p className="signup-text">
             Are you new? <a href="#">Create an Account</a>
           </p>
