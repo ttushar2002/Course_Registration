@@ -5,14 +5,15 @@ import Flogin from "./Faculty/Flogin";
 import Alogin from "./Admin/Alogin";
 import SDetails from "./Admin/SDetails";
 import ASidebar from "./Admin/ASidebar";
+import SRegister from "./Student/SRegister";
 
 const App = () => {
   return (
     <>
       <Routes>
-
         {/* Student */}
         <Route path="/Slogin" element={<Slogin />} />
+        <Route path="/SRegister" element={<SRegister />} />
 
         {/* Faculty */}
         <Route path="/Flogin" element={<Flogin />} />
@@ -21,7 +22,6 @@ const App = () => {
         <Route path="/Alogin" element={<Alogin />} />
         <Route path="/ASidebar" element={<ASidebar />} />
         <Route path="/SDetails" element={<SDetails />} />
-
       </Routes>
     </>
   );

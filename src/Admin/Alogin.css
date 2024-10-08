@@ -1,7 +1,9 @@
 .login-main {
   & .login-container {
     & h2{
+      display: flex;
         text-align: center;
+        flex-direction: column;
     }
     & .login-form {
       display: flex;
@@ -12,7 +14,7 @@
       margin: 1rem;
       & .login-input {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
       }
     }

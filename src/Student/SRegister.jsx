@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./Slogin.css";
 
-const Slogin = () => {
+const SRegister = () => {
   // Declare states for form fields and errors
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",
+    confirmPassword: "",
   });
   const [errors, setErrors] = useState({});
 
@@ -35,6 +36,11 @@ const Slogin = () => {
       validationErrors.password = "Password is required";
     } else if (formValues.password.length < 8) {
       validationErrors.password = "Password must be at least 8 characters long";
+    }
+
+    // Confirm Password validation: must match the password
+    if (formValues.password !== formValues.confirmPassword) {
+      validationErrors.confirmPassword = "Passwords do not match";
     }
 
     return validationErrors;
@@ -70,7 +76,7 @@ const Slogin = () => {
         {/* Right section with form */}
         <div className="login-right">
           <div className="login-header">
-            <h1>Student Login</h1>
+            <h1>Student Registration</h1>
           </div>
           <form className="login-form" onSubmit={handleSubmit}>
             <label htmlFor="email">Username</label>
@@ -93,17 +99,25 @@ const Slogin = () => {
             />
             {errors.password && <p className="error">{errors.password}</p>}
 
-            <a href="#" className="forgot-password">
-              Forgot password?
-            </a>
+            <label htmlFor="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              value={formValues.confirmPassword}
+              onChange={handleChange}
+              placeholder="*********"
+            />
+            {errors.confirmPassword && (
+              <p className="error">{errors.confirmPassword}</p>
+            )}
 
             <button type="submit" className="signin-btn">
-              Sign in
+              Sign up
             </button>
           </form>
 
           <p className="signup-text">
-            Are you new? <a href="#">Create an Account</a>
+            Already have an account? <a href="#">Sign in</a>
           </p>
         </div>
       </div>
@@ -111,4 +125,4 @@ const Slogin = () => {
   );
 };
 
-export default Slogin;
+export default SRegister;
