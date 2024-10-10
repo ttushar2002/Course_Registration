@@ -1,5 +1,8 @@
 .sdetails-main {
+  display: flex;
+  gap: 1rem;
   & .sdetails-container {
+    width: 88vw;
     & h2 {
       text-align: center;
       margin: 2rem;

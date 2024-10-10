@@ -2,24 +2,17 @@ import React from 'react'
 import "./Alogin.css"
 const Alogin = () => {
   return (
-    <div className="login-main">
-      <div className="login-container">
+    <div className="login-container">
+      <div className="login-box">
         <h2>Admin Login</h2>
-
-        {/* Login Form */}
-        <form action="">
-          <div className="login-form">
-            <div className="login-input">
-              <label>Username</label>
-              <input type="text" name="username" placeholder="Enter your username" />
-            </div>
-            
-            <div className="login-input">
-              <label>Password</label>
-              <input type="password" name="" id="" placeholder="Enter your password" />
-            </div>
-            <button type="submit">Login</button>
+        <form>
+          <div className="input-group">
+            <input type="text" placeholder="Username" required />
           </div>
+          <div className="input-group">
+            <input type="password" placeholder="Password" required />
+          </div>
+          <button type="submit" className="login-btn">Login</button>
         </form>
       </div>
     </div>

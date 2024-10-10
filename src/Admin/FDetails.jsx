@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Details.css"
 import ASidebar from './ASidebar'
-const SDetails = () => {
-    return (
-        <div className="sdetails-main">
+const FDetails = () => {
+  return (
+    <div className="sdetails-main">
             <ASidebar/>
             <div className="sdetails-container">
-                <h2>Student Details</h2>
+                <h2>Faculty Details</h2>
                 <div className="sdetails-table">
                 <h4>Count: 10</h4>
                     <table>
@@ -15,7 +15,7 @@ const SDetails = () => {
                             <th>ID</th>
                             <th>Email</th>
                             <th>Phone</th>
-                            <th>Course Name</th>
+                            <th>Subject</th>
                             <th>Action</th>
                         </tr>
                         <tr>
@@ -30,7 +30,7 @@ const SDetails = () => {
                 </div>
             </div>
         </div>
-    )
+  )
 }
 
-export default SDetails
+export default FDetails

@@ -1,26 +1,30 @@
 .asidebar-main {
-    & .asidebar-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: start;
-        width: 10rem;
-        gap: 2rem;
-        margin-left: 1rem;
-        & button {
-            width: 100%;
-            text-align: left;
-        }
+    height: 100vh;
+  & .asidebar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    width: 10rem;
+    gap: 2rem;
+    margin-left: 1rem;
+    & button {
+      width: 100%;
+      text-align: center;
     }
-    & .logout {
-        margin: 15rem 0 0 1rem;
-        & button {
-            width: 10rem;
-            text-align: left;
-        }
+    & h2 {
+      margin-top: 1rem;
     }
-    /* ASidebar.css */
-.modal-backdrop {
+  }
+  & .logout {
+    margin: 15rem 0 0 1rem;
+    & button {
+      width: 10rem;
+      text-align: center;
+    }
+  }
+
+  .modal-backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,41 +35,40 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-}
 
-.modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    width: 300px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-.modal-actions {
-    margin-top: 20px;
-}
+    .modal-actions {
+      margin-top: 20px;
+    }
 
-.modal-actions button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-}
+    .modal-actions button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
 
-.modal-actions button:hover {
-    background-color: #0056b3;
-}
+    .modal-actions button:hover {
+      background-color: #0056b3;
+    }
 
-.modal-actions button:last-child {
-    background-color: #6c757d;
-}
+    .modal-actions button:last-child {
+      background-color: #6c757d;
+    }
 
-.modal-actions button:last-child:hover {
-    background-color: #5a6268;
-}
-
+    .modal-actions button:last-child:hover {
+      background-color: #5a6268;
+    }
+  }
 }

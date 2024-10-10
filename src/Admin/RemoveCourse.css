@@ -1,0 +1,32 @@
+.remove-course-main {
+    display: flex;
+    gap: 1rem;
+    & .remove-course-container {
+      width: 88vw;
+      & h2 {
+        text-align: center;
+        margin: 2rem;
+      }
+      .remove-course-table {
+          display: flex;
+          flex-direction: column;
+          padding: 0 1rem 0 1rem;
+        & h4 {
+          margin-bottom: 1rem;
+        }
+        & table {
+          border-collapse: collapse;
+          & th,
+          td {
+            border: 1px solid;
+            padding: 0.5rem;
+            text-align: center;
+          }
+          & button {
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  

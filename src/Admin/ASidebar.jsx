@@ -22,11 +22,11 @@ const ASidebar = () => {
     return (
         <div className="asidebar-main">
             <div className="asidebar-container">
-                <h2>Admin</h2>
-                <button onClick={() => navigate('/student-details')}>Student Details</button>
-                <button onClick={() => navigate('/faculty-details')}>Faculty Details</button>
-                <button onClick={() => navigate('/add-course')}>Add Course</button>
-                <button onClick={() => navigate('/remove-course')}>Remove Course</button>
+                <h2>Admin Panel</h2>
+                <button onClick={() => navigate('/sdetails')}>Student Details</button>
+                <button onClick={() => navigate('/fdetails')}>Faculty Details</button>
+                <button onClick={() => navigate('/addcourse')}>Add Course</button>
+                <button onClick={() => navigate('/removecourse')}>Remove Course</button>
             </div>
             <div className="logout">
                 <button onClick={handleLogout}>Logout</button>
